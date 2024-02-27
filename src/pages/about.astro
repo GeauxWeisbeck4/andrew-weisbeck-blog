@@ -1,13 +1,49 @@
-<body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+---
+const pageTitle = "About Andrew";
+const identity = {
+  firstName: "Andrew",
+  country: "homeless in the United States",
+  occupation: "Freelance Web Developer",
+  hobbies: ["coding", "reading", "college sports"],
+};
 
-  <h1>About Andrew</h1>
-  <h2>A 32 year old web developer, currently experiencing homelessness.</h2>
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
-  <p>I am currently homeless and am working on getting my way out of my current situation.</p>
+const happy = true;
+const finished = false;
+const goal = 3;
+---
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
 
-  <p>I am a skilled web developer, avid learner, and empathetic soul. I strive to live my life in the most intentional and enjoyable way I possibly can.</p>
+        <h1>{pageTitle}</h1>
+        <p>Here are a few things you should know about me:</p>
+        <ul>
+            <li>My name is {identity.firstName}.</li>
+            <li>I currently am {identity.country} and it is next to nearly impossible to get yourself out of this situation here. So much for being the richest country in the world...</li>
+            <li>I am a {identity.occupation} who would love an opportunity to show any company my skillset. I am seeking employment currently to help me change my current situation.</li>
+            {identity.hobbies.length >= 2 &&
+                <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+              }
+        </ul>
+        <p>My skills are:</p>
+        <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
 
-</body>
+        {happy && <p>I am happy to be learning Astro!</p>}
+
+        {finished && <p>I finished this tutorial!</p>}
+
+        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+      </body>
+</html>
+
