@@ -4,6 +4,19 @@ Welcome to my new Dev Blog that I created with the [Astro Blog Tutorial](https:/
 
 It is currently a work in progress - I am constantly adding and updating this as I have time in my life with my current situation.
 
-## Enjoy!
+## To Do
 
-More to come in the Readme....
+- [ ] Social Media Links
+- [ ] Tailwind Config File
+- [ ] Create a Blog Card Component
+- [ ] Create a Navbar Component
+- [ ] Create Team Tags with Custom Team Pages
+- [ ] Create a Projects Page
+- [ ] Create a Contact Me Page
+- [ ] Create a Donations Page
+- [ ] Add Mastodon Mentions Integration
+    - [ ] Test with a Mastodon Post
+- List of Integrations
+ - [ ] Astro Image Tools
+ - [ ] Astro Sitemap
+ - [ ] Astro SEO

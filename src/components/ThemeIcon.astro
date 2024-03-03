@@ -16,24 +16,24 @@
   </style>
 
   <script>
-    document.addEventListener('astro:page-load', () => {
-        const theme = (() => {
-        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-            return localStorage.getItem('theme');
-        }
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark';
-        }
-            return 'light';
-        })();
+  document.addEventListener('astro:page-load', () => {
+    const theme = (() => {
+      if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+      }
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+      return "light";
+    })();
 
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark');
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
     } else {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     }
 
-    window.localStorage.setItem('theme', theme);
+    window.localStorage.setItem("theme", theme);
 
     const handleToggleClick = () => {
       const element = document.documentElement;
@@ -41,10 +41,10 @@
 
       const isDark = element.classList.contains("dark");
       localStorage.setItem("theme", isDark ? "dark" : "light");
-    }
+    };
 
     document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
-});
+  });
   </script>
 
 <script>
@@ -53,4 +53,4 @@
       ? document.documentElement.classList.add("dark")
       : document.documentElement.classList.add("light");
     });
-  </script>
+</script>
