@@ -18,5 +18,11 @@ It is currently a work in progress - I am constantly adding and updating this as
     - [ ] Test with a Mastodon Post
 - List of Integrations
  - [ ] Astro Image Tools
- - [ ] Astro Sitemap
- - [ ] Astro SEO
+ - [x] Astro robots.txt
+ - [x] Astro Sitemap
+ - [x] Astro SEO
+    - [ ] finish Adding SEO tags
+ - [ ] Add Strapi CMS
+ - [ ] Add comments to blog posts
+ - [ ] Add a guestbook
+ - [ ] Add polling page
