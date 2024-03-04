@@ -21,4 +21,5 @@ I found a great example of how to use Astro, Svelte, and Typescript to create co
 
 I also worked on creating my Tailwind config file by adding my favorite team colors to the theme part of the configuration. There are a few projects I am referencing to do this, that I will share shortly.
 
-
+Potential App Idea:
+https://rapidapi.com/guides/how-to-build-a-sports-app-in-next-js-using-a-sports-api-from-rapidapi-hub

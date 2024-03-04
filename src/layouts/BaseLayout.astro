@@ -44,9 +44,9 @@ import { SEO } from "astro-seo";
       }}
     />
   </head>
-  <body class="mx-0 my-auto w-auto max-w-screen-lg">
+  <body class="mx-auto my-0 w-3/4 max-w-screen-lg p-4 leading-normal">
     <Header />
-    <h1 transition:animate="slide">{pageTitle}</h1>
+    <h1 class="mx-4 my-0 text-4xl" transition:animate="slide">{pageTitle}</h1>
     <slot />
     <Footer />
     <script>
