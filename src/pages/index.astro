@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
-const pageTitle = "Andrew's Dev Blog";
+const pageTitle = "Home of Andrew Weisbeck";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog about web development and what I'm learning.</h2>
+  <h2>Hello, I'm a full-stack web developer and entrepreneur who is focused on creating easy to use applications that solve practical problems for businesses and individuals.</h2>
+
   <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>

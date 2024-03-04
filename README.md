@@ -26,3 +26,4 @@ It is currently a work in progress - I am constantly adding and updating this as
  - [ ] Add comments to blog posts
  - [ ] Add a guestbook
  - [ ] Add polling page
+- [ ] Explore Tailwind Aspect Ratio plug in

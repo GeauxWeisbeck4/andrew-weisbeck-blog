@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-
+				'light': '#f1f5f9',
+				'dark': '#0d0950',
 				/**
 			 	* Color Palette - Team Colors
 			 	*/

@@ -7,7 +7,7 @@ const { pageTitle } = Astro.props;
 
 import { SEO } from "astro-seo";
 ---
-<html lang="en">
+<html class="bg-[#f1f5f9] dark:bg-[#0d0950] dark:text-[#fff] font-sans" lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -44,7 +44,7 @@ import { SEO } from "astro-seo";
       }}
     />
   </head>
-  <body>
+  <body class="mx-0 my-auto w-auto max-w-screen-lg">
     <Header />
     <h1 transition:animate="slide">{pageTitle}</h1>
     <slot />
